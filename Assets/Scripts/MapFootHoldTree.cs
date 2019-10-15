@@ -56,7 +56,7 @@ public class MapFootHoldTree : MonoBehaviour
         {
             if (!fh.isWall() && fh.getY1() != fh.getY2())
             {
-                int calcY;
+                float calcY;
                 float s1 = Mathf.Abs(fh.getY2() - fh.getY1());
                 float s2 = Mathf.Abs(fh.getX2() - fh.getX1());
                 float s4 = Mathf.Abs(p.x - fh.getX1());
