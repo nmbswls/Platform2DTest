@@ -7,6 +7,9 @@ public class MapFootHold : MonoBehaviour, IComparable<MapFootHold>
 {
     public Vector2Int P1;
     public Vector2Int P2;
+    //ss
+    private int id;
+    private int next, prev;
 
     public bool isWall()
     {
@@ -34,12 +37,47 @@ public class MapFootHold : MonoBehaviour, IComparable<MapFootHold>
         return P2.y;
     }
 
-
-
-
-
-    public int CompareTo(MapFootHold other)
+    public int getId()
     {
-        throw new NotImplementedException();
+        return id;
+    }
+
+    public int getNext()
+    {
+        return next;
+    }
+
+    public void setNext(int next)
+    {
+        this.next = next;
+    }
+
+    public int getPrev()
+    {
+        return prev;
+    }
+
+    public void setPrev(int prev)
+    {
+        this.prev = prev;
+    }
+
+
+
+    public int CompareTo(MapFootHold o)
+    {
+        MapFootHold other = (MapFootHold)o;
+        if (P2.y < other.getY1())
+        {
+            return -1;
+        }
+        else if (P1.y > other.getY2())
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
     }
 }
