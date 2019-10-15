@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{9CE26A59-A0F9-CF74-E750-2315C23D6614}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/NewMonoBehaviour.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Map.cs" Line="17" Column="6" />
+      <File FileName="Assets/Scripts/MapFootHold.cs" Line="82" Column="6" />
+      <File FileName="Assets/Scripts/NewMonoBehaviour.cs" Line="4" Column="29" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
