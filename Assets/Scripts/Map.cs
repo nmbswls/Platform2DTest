@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using UnityEngine;
 
-public class Map : MonoBehaviour
+public class Map
 {
 
-    private MapFootHoldTree footholds = null;
+    public MapFootHoldTree footholds = null;
+    public List<MapReactor> Reactors = new List<MapReactor>();
+    public List<GameObject> Climbables = new List<GameObject>();
 
+    public void Init()
+    {
+
+    }
     //
 }

@@ -2,23 +2,50 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using UnityEditor;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class MapFootHold : MonoBehaviour, IComparable<MapFootHold>
 {
-    [HideInInspector]
-    public Vector2 P1;
 
-    [HideInInspector]
+
+    //public Vector2 Center;
+    public Vector2 P1;
     public Vector2 P2;
 
     public bool IsSlope;
 
-    SpriteRenderer sprite;
+    public SpriteRenderer sprite;
+
+    public float shieldAre;
 
     //ss
     private int id;
     private int next, prev;
+
+    [ContextMenu("Ajust")]
+    void Adjust()
+    {
+        P1 = AdjustPos(P1,1);
+        P2 = AdjustPos(P2,1);
+        transform.localPosition = AdjustPos(transform.localPosition,1);
+        InitCollider();
+    }
+
+    public static Vector2 AdjustPos(Vector2 pos, int digit)
+    {
+        float rate = 1;
+        for(int i = 0; i < digit; i++)
+        {
+            rate *= 10;
+        }
+        float x = (int)Mathf.Round(pos.x * rate) / rate;
+        float y = (int)Mathf.Round(pos.y * rate) / rate;
+
+        return new Vector2(x,y);
+    }
+
+
 
     void Start()
     {
@@ -39,18 +66,33 @@ public class MapFootHold : MonoBehaviour, IComparable<MapFootHold>
 
         //float originHeight = sprite.bounds.size.y;
         //sprite.size = new Vector2(P2.x-P1.x, originHeight);
-        InitCollider();
+        //InitCollider();
 
     }
 
     private void InitCollider()
     {
-        BoxCollider2D collider = gameObject.AddComponent<BoxCollider2D>();
-        float ColliderThick = 1f;
-        ColliderThick = ColliderThick < sprite.size.y ? ColliderThick: sprite.size.y;
-        float offsetY = sprite.size.y * 0.5f - ColliderThick * 0.5f;
-        collider.size = new Vector2(sprite.size.x, ColliderThick);
-        collider.offset = new Vector2(0, offsetY);
+
+
+        DestroyImmediate(gameObject.GetComponent<Collider2D>()); 
+        if (!isSlope())
+        {
+            BoxCollider2D collider = gameObject.AddComponent<BoxCollider2D>();
+            float ColliderThick = 1f;
+            ColliderThick = ColliderThick < sprite.size.y ? ColliderThick : sprite.size.y;
+            float offsetY = sprite.size.y * 0.5f - ColliderThick * 0.5f;
+            collider.size = new Vector2(sprite.size.x, ColliderThick);
+            collider.offset = new Vector2(0, offsetY);
+            collider.usedByEffector = true;
+        }
+        else
+        {
+            EdgeCollider2D collider = gameObject.AddComponent<EdgeCollider2D>();
+            collider.points = new Vector2[] {P1,P2, P1.y>P2.y ? new Vector2(P1.x,P2.y): new Vector2(P2.x, P1.y) };
+            collider.usedByEffector = true;
+        }
+
+
     }
 
     public bool isWall()

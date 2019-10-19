@@ -18,7 +18,7 @@ public class ActActionInfo
 
 public class ActCtrl : MonoBehaviour {
 
-
+    public ActCharacter actCharacter;
 
     public bool isCombo = false;
     public bool enableCombo = false;
@@ -43,10 +43,14 @@ public class ActCtrl : MonoBehaviour {
     int[] SKillMap = new int[5];
     // Use this for initialization
     void Start () {
+
+        actCharacter = GetComponentInParent<ActCharacter>();
+
         boxAnimator = GetComponent<Animator>();
         boxAnimator.GetCurrentAnimatorStateInfo(0);
         BindBoxes();
         InitActionTable();
+
 
         OptStack.Clear();
 
@@ -110,7 +114,7 @@ public class ActCtrl : MonoBehaviour {
 
     void Tick(float dTime)
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if (actCharacter.InputMdl.attackL)
         {
             if(NowActionId == "normal_1" || NowActionId == "normal_2")
             {
@@ -124,13 +128,12 @@ public class ActCtrl : MonoBehaviour {
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (actCharacter.InputMdl.attackR)
         {
             boxAnimator.SetBool("lasting", true);
             SpriteAnimtor.SetBool("lasting", true);
         }
-
-        if (Input.GetKeyUp(KeyCode.K))
+        else
         {
             boxAnimator.SetBool("lasting", false);
             SpriteAnimtor.SetBool("lasting", false);
