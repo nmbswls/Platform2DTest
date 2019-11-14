@@ -36,6 +36,8 @@ public class GameMain : MonoBehaviour
 
     public void Init()
     {
+        Application.targetFrameRate = 60;
+
         gameMode = new ActGameMode();
         gameMode.Init();
         sceneLoader = GetComponent<SceneLoader>();

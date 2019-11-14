@@ -1,25 +1,75 @@
 ﻿<Properties StartupConfiguration="{9CE26A59-A0F9-CF74-E750-2315C23D6614}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ActChain.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ActCharacter/Abilities/ActJump.cs">
     <Files>
-      <File FileName="Assets/Scripts/Map.cs" Line="6" Column="17" />
-      <File FileName="Assets/Scripts/MapFootHold.cs" Line="79" Column="10" />
       <File FileName="Assets/CreativeSpore/SmartColliders2D/changelog.txt" Line="17" Column="19" />
-      <File FileName="Assets/CreativeSpore/SmartColliders2D/Scripts/SmartColliders/SmartCollider2D.cs" Line="8" Column="36" />
+      <File FileName="Assets/CreativeSpore/SmartColliders2D/Scripts/SmartColliders/SmartCollider2D.cs" Line="196" Column="26" />
       <File FileName="Assets/CreativeSpore/SmartColliders2D/Scripts/SmartColliders/SmartColliderCore.cs" Line="64" Column="47" />
-      <File FileName="Assets/CreativeSpore/SmartColliders2D/Scripts/SmartColliders/SmartPlatformCollider.cs" Line="18" Column="34" />
-      <File FileName="Assets/CreativeSpore/SmartColliders2D/Scripts/SmartColliders/SmartRectCollider2D.cs" Line="80" Column="22" />
-      <File FileName="Assets/Scripts/ActGameMode.cs" Line="45" Column="9" />
-      <File FileName="Assets/Scripts/ActInput.cs" Line="30" Column="13" />
-      <File FileName="Assets/Scripts/GameMain.cs" Line="35" Column="5" />
-      <File FileName="Assets/Scripts/ActCharacter.cs" Line="149" Column="26" />
-      <File FileName="Assets/Scripts/ActCtrl.cs" Line="117" Column="1" />
-      <File FileName="Assets/Scripts/AtkBox.cs" Line="29" Column="6" />
-      <File FileName="Assets/Scripts/MapReactor.cs" Line="9" Column="1" />
+      <File FileName="Assets/CreativeSpore/SmartColliders2D/Scripts/SmartColliders/SmartPlatformCollider.cs" Line="42" Column="56" />
+      <File FileName="Assets/CreativeSpore/SmartColliders2D/Scripts/SmartColliders/SmartRectCollider2D.cs" Line="292" Column="33" />
+      <File FileName="Assets/Scripts/ActGameMode.cs" Line="25" Column="1" />
+      <File FileName="Assets/Scripts/GameMain.cs" Line="41" Column="36" />
+      <File FileName="Assets/Scripts/ActCharacter/ActCharacter.cs" Line="325" Column="27" />
+      <File FileName="Assets/Scripts/ActCharacter/ActCtrl.cs" Line="139" Column="24" />
+      <File FileName="Assets/Scripts/ActCharacter/AtkBox.cs" Line="13" Column="49" />
       <File FileName="Assets/Scripts/SceneLoader.cs" Line="36" Column="1" />
-      <File FileName="Assets/Scripts/MapFootHoldTree.cs" Line="16" Column="13" />
       <File FileName="Assets/Scripts/FSMClearSignals.cs" Line="1" Column="1" />
       <File FileName="Library/PackageCache/com.unity.package-manager-ui@2.0.8/Editor/Sources/Services/Packages/PackageAssetPostprocessor.cs" Line="14" Column="1" />
-      <File FileName="Assets/Scripts/ActChain.cs" Line="23" Column="55" />
+      <File FileName="Assets/Scripts/ActCharacter/ActChain.cs" Line="12" Column="14" />
+      <File FileName="Assets/Scripts/Quest/QuestListener.cs" Line="17" Column="27" />
+      <File FileName="Assets/CreativeSpore/SmartColliders2D/Scripts/SmartControllers/PlatformCharacterAnimator.cs" Line="43" Column="47" />
+      <File FileName="Assets/CreativeSpore/SmartColliders2D/Scripts/SmartControllers/PlatformCharacterController.cs" Line="228" Column="43" />
+      <File FileName="Assets/CreativeSpore/SmartColliders2D/Scripts/SmartControllers/PlatformCharacterPhysics.cs" Line="68" Column="56" />
+      <File FileName="Assets/Scripts/ActCharacter/ActStateCtrl.cs" Line="39" Column="1" />
+      <File FileName="Assets/Scripts/ActCharacter/FootDetector.cs" Line="18" Column="1" />
+      <File FileName="Assets/Scripts/ActCharacter/HitBox.cs" Line="6" Column="27" />
+      <File FileName="Assets/Scripts/IHittable.cs" Line="7" Column="16" />
+      <File FileName="Assets/Scripts/Enemy/Enemy.cs" Line="11" Column="5" />
+      <File FileName="Assets/Scripts/ActCharacter/HitEffect.cs" Line="11" Column="1" />
+      <File FileName="Assets/Scripts/Editor/MovingPlatformEditor.cs" Line="64" Column="180" />
+      <File FileName="Assets/Scripts/Editor/MapFootHoldEditor.cs" Line="83" Column="6" />
+      <File FileName="Assets/Scripts/ActCharacter/PlayerInput.cs" Line="29" Column="1" />
+      <File FileName="Assets/Scripts/Enemy/AIAgent.cs" Line="16" Column="32" />
+      <File FileName="Assets/Scripts/ActCharacter/ActPlayerController.cs" Line="72" Column="17" />
+      <File FileName="Assets/Scripts/ActCharacter/Controller.cs" Line="22" Column="25" />
+      <File FileName="Assets/Behavior Designer/Editor/BehaviorTreeInspector.cs" Line="7" Column="51" />
+      <File FileName="Assets/Behavior Designer/Editor/ExternalBehaviorTreeInspector.cs" Line="1" Column="1" />
+      <File FileName="Assets/Behavior Designer/Runtime/BehaviorTree.cs" Line="1" Column="1" />
+      <File FileName="Assets/Behavior Designer/Runtime/ExternalBehaviorTree.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BehaviorTree/WithinSight.cs" Line="21" Column="15" />
+      <File FileName="Assets/Scripts/BehaviorTree/MoveTowards.cs" Line="13" Column="33" />
+      <File FileName="Assets/Scripts/BehaviorTree/ThrowChain.cs" Line="20" Column="15" />
+      <File FileName="Assets/Scripts/BehaviorTree/JumpTask.cs" Line="19" Column="15" />
+      <File FileName="Assets/Scripts/BehaviorTree/PatrolTask.cs" Line="6" Column="24" />
+      <File FileName="Assets/CreativeSpore/SmartColliders2D/Scripts/SmartControllers/SmartPlatformController.cs" Line="258" Column="20" />
+      <File FileName="Assets/Scripts/PlatformPhysics/PlatformController.cs" Line="542" Column="23" />
+      <File FileName="Assets/Scripts/PlatformPhysics/PlatformMoveState.cs" Line="41" Column="38" />
+      <File FileName="Assets/Scripts/PlatformPhysics/PlatformMoveParameters.cs" Line="10" Column="18" />
+      <File FileName="Assets/Scripts/PlatformPhysics/PhysicsDebugger.cs" Line="16" Column="19" />
+      <File FileName="Assets/Scripts/PlatformPhysics/MathUtils.cs" Line="13" Column="1" />
+      <File FileName="Assets/Scripts/Map/MovingPlatform.cs" Line="346" Column="28" />
+      <File FileName="Assets/Scripts/PlatformPhysics/SurfaceModifier.cs" Line="21" Column="56" />
+      <File FileName="Assets/Scripts/PlatformPhysics/LayerExtension.cs" Line="4" Column="35" />
+      <File FileName="Assets/CreativeSpore/SmartColliders2D/Scripts/SmartControllers/Editor/PlatformCharacterControllerEditor.cs" Line="48" Column="216" />
+      <File FileName="Assets/CreativeSpore/SmartColliders2D/Extra/Scripts/Editor/PatrolBehaviourEditor.cs" Line="44" Column="1" />
+      <File FileName="Assets/CreativeSpore/SmartColliders2D/Extra/Scripts/Editor/PixelPerfectCameraEditor.cs" Line="17" Column="21" />
+      <File FileName="Assets/CreativeSpore/SmartColliders2D/Scripts/SmartColliders/Editor/SmartRectCollider2DEditor.cs" Line="40" Column="42" />
+      <File FileName="Assets/CreativeSpore/SmartColliders2D/Scripts/SmartColliders/Editor/SmartPlatformColliderEditor.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ActCharacter/ActCharacterNew.cs" Line="144" Column="47" />
+      <File FileName="Assets/Scripts/ActCharacter/Abilities/ActAbility.cs" Line="23" Column="39" />
+      <File FileName="Assets/Scripts/ActCharacter/Abilities/ActMoveH.cs" Line="32" Column="42" />
+      <File FileName="Assets/Scripts/Utils/StateMachine.cs" Line="9" Column="26" />
+      <File FileName="Assets/Scripts/Utils/Events/EventManager.cs" Line="13" Column="1" />
+      <File FileName="Assets/Scripts/ActCharacter/Abilities/ActJump.cs" Line="317" Column="22" />
+      <File FileName="Assets/Scripts/ActCharacter/Abilities/ActClimbing.cs" Line="34" Column="24" />
+      <File FileName="Assets/Scripts/Map/Climbable.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/Map/Map.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Map/MapFootHold.cs" Line="16" Column="28" />
+      <File FileName="Assets/Scripts/Map/MapFootHoldTree.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ActCharacter/Abilities/ActDash.cs" Line="105" Column="50" />
+      <File FileName="Assets/Scripts/ActCharacter/Abilities/ActCrouch.cs" Line="23" Column="32" />
+      <File FileName="Assets/Scripts/ActCharacter/Abilities/ActWallCling.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/Map/WallClingOverride.cs" Line="4" Column="31" />
+      <File FileName="Assets/Scripts/ActCharacter/Abilities/ActWallJump.cs" Line="5" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
@@ -30,10 +80,16 @@
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/chenyexuan/unityProjects/Platform2DTest/Assets/Scripts/ActGameMode.cs" relfile="Assets/Scripts/ActGameMode.cs" line="25" column="1" />
       <Breakpoint file="/Users/chenyexuan/unityProjects/Platform2DTest/Assets/Scripts/SceneLoader.cs" relfile="Assets/Scripts/SceneLoader.cs" line="42" column="1" />
       <Breakpoint file="/Users/chenyexuan/unityProjects/Platform2DTest/Assets/Scripts/SceneLoader.cs" relfile="Assets/Scripts/SceneLoader.cs" line="40" column="1" />
       <Breakpoint file="/Users/chenyexuan/unityProjects/Platform2DTest/Assets/Scripts/SceneLoader.cs" relfile="Assets/Scripts/SceneLoader.cs" line="37" column="1" />
+      <Breakpoint file="/Users/chenyexuan/unityProjects/Platform2DTest/Assets/Scripts/ActCharacter.cs" relfile="Assets/Scripts/ActCharacter.cs" line="77" column="80" />
+      <Breakpoint file="/Users/chenyexuan/unityProjects/Platform2DTest/Assets/Scripts/ActCharacter/ActCtrl.cs" relfile="Assets/Scripts/ActCharacter/ActCtrl.cs" line="266" column="1" />
+      <Breakpoint file="/Users/chenyexuan/unityProjects/Platform2DTest/Assets/Scripts/MapFootHold.cs" relfile="Assets/Scripts/MapFootHold.cs" line="77" column="1" />
+      <Breakpoint file="/Users/chenyexuan/unityProjects/Platform2DTest/Assets/Scripts/ActCharacter/ActCharacter.cs" relfile="Assets/Scripts/ActCharacter/ActCharacter.cs" line="507" column="1" />
+      <Breakpoint file="/Users/chenyexuan/unityProjects/Platform2DTest/Assets/Scripts/PlatformPhysics/PlatformController.cs" relfile="Assets/Scripts/PlatformPhysics/PlatformController.cs" line="448" column="1" />
+      <Breakpoint file="/Users/chenyexuan/unityProjects/Platform2DTest/Assets/Scripts/PlatformPhysics/PlatformController.cs" relfile="Assets/Scripts/PlatformPhysics/PlatformController.cs" line="752" column="1" />
+      <Breakpoint file="/Users/chenyexuan/unityProjects/Platform2DTest/Assets/Scripts/ActCharacter/ActCharacterNew.cs" relfile="Assets/Scripts/ActCharacter/ActCharacterNew.cs" line="206" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

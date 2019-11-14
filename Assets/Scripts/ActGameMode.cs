@@ -34,10 +34,14 @@ public class ActGameMode
     public Map map;
     public ActHud HudRoot;
 
+    public ActPlayerController playerController;
+
     public void Init(){
         map = new Map();
         HudRoot = new ActHud();
         HudRoot.BindView(GameObject.Find("Hud").transform);
+
+        playerController = GameObject.Find("Player").GetComponent<ActPlayerController>();
     }
 
     public void LoadMap(string map = "default")

@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1861373540978474783}
   - component: {fileID: 6709160841134671751}
-  - component: {fileID: 3587455603162434655}
+  - component: {fileID: 7295178440063355225}
   m_Layer: 0
   m_Name: Chain
   m_TagString: Untagged
@@ -240,7 +240,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3587455603162434655
+--- !u!114 &7295178440063355225
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -249,6 +249,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7359851606985150246}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e4024e71dda84aaea7e6646058b5743, type: 3}
+  m_Script: {fileID: 11500000, guid: f8784bfecf5984f4ab5693662ce8fefd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
