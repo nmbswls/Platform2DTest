@@ -14,7 +14,7 @@ public class AIAgent : Controller
 
         Pawn = GetComponent<ActCharacter>();
         Pawn.controller = this;
-        gameMode = GameMain.GetInstance().gameMode;
+        gameMode = OldGameMain.GetInstance().gameMode;
         bt = GetComponent<BehaviorTree>();
         //BehaviorManager.instance.UpdateInterval  = UpdateIntervalType.SpecifySeconds;
         //BehaviorManager.instance.UpdateIntervalSeconds = 0.25f;

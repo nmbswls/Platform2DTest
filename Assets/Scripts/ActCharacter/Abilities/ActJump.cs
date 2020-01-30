@@ -255,6 +255,7 @@ public class ActJump : ActAbility
 
         if (!AbilityPermitted) { return; }
 
+        //Debug.Log(NumberOfJumpsLeft);
         // if we just got grounded, we reset our number of jumps
         if (_platformer.NormalState.JustGotGrounded)
         {

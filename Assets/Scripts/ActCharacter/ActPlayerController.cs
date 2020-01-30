@@ -9,6 +9,8 @@ public class ActPlayerController : Controller
     public ActCharacterNew Pawn;
     public List<MapReactor> ActivateReactors = new List<MapReactor>();
 
+    public CameraController cameraCtrl;
+
     // Use this for initialization
     void Start()
     {
@@ -16,6 +18,9 @@ public class ActPlayerController : Controller
         InputMdl.controller = this;
         Pawn = GetComponent<ActCharacterNew>();
         Pawn.controller = this;
+        Pawn.Init();
+        cameraCtrl = Camera.main.GetComponent<CameraController>();
+        cameraCtrl.Init(this);
     }
 
     // Update is called once per frame
@@ -30,7 +35,7 @@ public class ActPlayerController : Controller
                 string actionString = ActivateReactors[0].actionString;
                 if (actionString == "map")
                 {
-                    GameMain.GetInstance().SwitchScene("map01");
+                    OldGameMain.GetInstance().SwitchScene("map01");
                 }
             }
         }
@@ -85,7 +90,7 @@ public class ActPlayerController : Controller
             if (!ActivateReactors.Contains(reactor))
             {
                 ActivateReactors.Add(reactor);
-                GameMain.GetInstance().gameMode.HudRoot.ShowReactHud(reactor);
+                OldGameMain.GetInstance().gameMode.HudRoot.ShowReactHud(reactor);
             }
         }
     }
@@ -99,7 +104,7 @@ public class ActPlayerController : Controller
             {
                 int idx = ActivateReactors.IndexOf(reactor);
                 ActivateReactors.Remove(reactor);
-                GameMain.GetInstance().gameMode.HudRoot.HideReactHud(idx);
+                OldGameMain.GetInstance().gameMode.HudRoot.HideReactHud(idx);
             }
         }
     }

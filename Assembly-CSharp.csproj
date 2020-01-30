@@ -649,10 +649,10 @@
     <Compile Include="Assets\Scripts\BehaviorTree\PatrolTask.cs" />
     <Compile Include="Assets\Scripts\BehaviorTree\ThrowChain.cs" />
     <Compile Include="Assets\Scripts\BehaviorTree\WithinSight.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
     <Compile Include="Assets\Scripts\Enemy\AIAgent.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\FSMClearSignals.cs" />
-    <Compile Include="Assets\Scripts\GameMain.cs" />
     <Compile Include="Assets\Scripts\IHittable.cs" />
     <Compile Include="Assets\Scripts\Map\Climbable.cs" />
     <Compile Include="Assets\Scripts\Map\Grip.cs" />
@@ -663,6 +663,7 @@
     <Compile Include="Assets\Scripts\Map\MapReactor.cs" />
     <Compile Include="Assets\Scripts\Map\MovingPlatform.cs" />
     <Compile Include="Assets\Scripts\Map\WallClingOverride.cs" />
+    <Compile Include="Assets\Scripts\OldGameMain.cs" />
     <Compile Include="Assets\Scripts\PlatformPhysics\LayerExtension.cs" />
     <Compile Include="Assets\Scripts\PlatformPhysics\MathUtils.cs" />
     <Compile Include="Assets\Scripts\PlatformPhysics\PhysicsDebugger.cs" />

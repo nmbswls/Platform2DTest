@@ -74,10 +74,7 @@ public class ActCharacterNew : MapObject
 
 
 
-    public void Start()
-    {
-        Init();
-    }
+
 
     public void Update()
     {
@@ -94,7 +91,7 @@ public class ActCharacterNew : MapObject
         return null;
     }
 
-    protected virtual void Init()
+    public virtual void Init()
     {
         platformer = GetComponent<PlatformController>();
         CharacterModel = transform.GetChild(0).gameObject;

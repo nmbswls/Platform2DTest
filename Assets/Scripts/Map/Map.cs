@@ -14,5 +14,10 @@ public class Map
     {
 
     }
+
+    public Bounds GetLevelBound()
+    {
+        return new Bounds();
+    }
     //
 }

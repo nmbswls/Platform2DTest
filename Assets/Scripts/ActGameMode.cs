@@ -49,5 +49,14 @@ public class ActGameMode
 
     }
 
+    public void ChangeMap()
+    {
+        Debug.Log("change map");
+    }
+
+    public Bounds GetLevelBound()
+    {
+        return map.GetLevelBound();
+    }
 
 }
